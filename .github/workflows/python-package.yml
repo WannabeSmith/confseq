@@ -37,4 +37,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics --exclude cpp_tests/googletest-1.8.1
     - name: Test with pytest
       run: |
+        # Run c++ tests
+        make -C cpp_tests runtests
+        # Run python tests
         pytest --ignore=cpp_tests/googletest-1.8.1
