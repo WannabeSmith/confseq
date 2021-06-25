@@ -5,7 +5,7 @@ name: Python package
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, ghactions-python-package ]
   pull_request_target:
     branches: [ master ]
 
